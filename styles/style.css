@@ -62,8 +62,8 @@ img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Vidéo */
-video {
+/* Présentation */
+présentation {
     width: 100%;
     max-width: 560px;
     display: block;

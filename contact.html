@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page contact</title>
+    <link rel="stylesheet" href="styles/stylecontact.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#vidéo">Video</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="titre-contact">
+            <h1 id="titre-contact">Contact – Projet Mother’s Rosario</h1>
+
+            <p id="intro-contact">
+                Ce formulaire vous permet de nous contacter à propos des produits dédiée à l’arc
+                <strong>Mother’s Rosario</strong> de <strong>Sword Art Online</strong> ou des questions liées
+                à l’accessibilité du site.
+                Les champs marqués d’un * sont obligatoires.
+            </p>
+
+            <div id="form-feedback" role="status" aria-live="polite"></div>
+            <form id="contact-form" novalidate aria-describedby="intro-contact">
+
+                <fieldset>
+                    <legend>Identité</legend>
+                    <label for="prenom">Prénom *</label>
+                    <input
+                        type="text"
+                        id="prenom"
+                        name="prenom"
+                        required
+                        aria-required="true"
+                        aria-describedby="help-prenom"
+                    >
+                    <label for="nom">Nom *</label>
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        required
+                        aria-required="true"
+                        aria-describedby="help-nom"
+                    >
+                    <label for="naissance">Date de naissance *</label>
+                    <input
+                        type="date"
+                        id="naissance"
+                        name="naissance"
+                        required
+                        aria-required="true"
+                        aria-describedby="help-naissance"
+                    >
+                </fieldset>
+
+                <fieldset>
+                    <legend>Coordonnées</legend>
+                    <label for="email">Adresse email *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        aria-required="true"
+                        aria-describedby="help-email"
+                        placeholder="adresse@email.com"
+                    >
+                    <label for="telephone">Téléphone *</label>
+                    <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        required
+                        aria-required="true"
+                        aria-describedby="help-telephone"
+                        placeholder="06 XX XX XX XX"
+                    >
+                </fieldset>
+
+                <fieldset>
+                    <legend>Plage horaire de contact *</legend>
+                    <p id="help-plage">Sélectionnez le créneau durant lequel vous êtes joignable.</p>
+                    <div>
+                        <input type="radio" id="matin" name="plage" value="matin" required>
+                        <label for="matin">Matin (08h – 12h)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="apresmidi" name="plage" value="apres-midi">
+                        <label for="apresmidi">Après-midi (12h – 17h)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="soir" name="plage" value="soir">
+                        <label for="soir">Soir (17h – 20h)</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message *</legend>
+                    <label for="message"></label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                        aria-required="true"
+                        aria-describedby="help-message"
+                        placeholder="Expliquez votre demande."
+                    ></textarea>
+                </fieldset>
+
+                <button type="submit">Envoyer le message</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question, n'hésitez pas à nous contacter à l'adresse suivante : </p>
+            <address>
+                <a href="mailto: exemple@email.com"> exemple@email.com</a>
+            </address>
+        </section>
+    </footer>
+</body>
+</html>
