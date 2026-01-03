@@ -1,0 +1,235 @@
+/* =========================
+   Style général
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* =========================
+   Header & Navigation
+========================= */
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: #6acded;
+    outline: none;
+}
+
+/* =========================
+   Contenu principal
+========================= */
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #1a1a1a;
+    text-align: center;
+}
+
+/* =========================
+   Introduction
+========================= */
+
+#introduction {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* =========================
+   Carrousel accessible
+========================= */
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    text-align: center;
+    opacity: 0.6;
+    transform: scale(0.8);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel-item img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* IMAGE CENTRALE */
+.carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.carousel-item.active img {
+    width: 260px;
+    height: 260px;
+}
+
+.carousel figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Boutons */
+
+.carousel button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.carousel button:hover,
+.carousel button:focus-visible {
+    background-color: #6acded;
+    color: #000;
+    outline: none;
+}
+
+/* =========================
+   Images produit
+========================= */
+
+.produit-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.produit-images img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;              /* TAILLE IDENTIQUE */
+    object-fit: contain;        /* Pas de découpe */
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Effet visuel (sans gêner l’accessibilité) */
+.produit-images img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus clavier visible */
+.produit-images img:focus-visible {
+    outline: 4px solid #6acded;
+    outline-offset: 4px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:hover,
+footer a:focus-visible {
+    color: #6acded;
+    outline: none;
+}
+
+/* =========================
+   Focus clavier global
+========================= */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #6acded;
+    outline-offset: 3px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+}

@@ -3,29 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page à propos</title>
+    <title>À propos – Projet Mother’s Rosario</title>
+    <link rel="stylesheet" href="styles/stylepropos.css">
 </head>
 <body>
     <header> 
-        <nav>
+        <nav aria-label="Navigation principale">
             <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#vidéo">Video</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        
-    </main>
-    <footer>
-        <section id="contact">
-            <h2>Contactez-nous</h2>
-            <p>Pour toute question, n'hésitez pas à nous contacter à l'adresse suivante : </p>
-            <address>
-                <a href="mailto: exemple@email.com"> exemple@email.com</a>
-            </address>
+        <section aria-labelledby="apropos">
+            <h1 id="apropos">À propos du projet Mother’s Rosario</h1>
+
+            <p>
+                <strong>Mother’s Rosario</strong> est un mini-site web réalisé dans le cadre
+                d’un projet pédagogique visant à concevoir une interface web
+                <strong>accessible, performante et conforme aux normes WCAG</strong>,
+                sans recours à des frameworks ou bibliothèques externes.
+            </p>
+
+            <p>
+                Le site met en avant l’arc narratif <strong>Mother’s Rosario</strong> de
+                l’anime <strong>Sword Art Online</strong>, reconnu pour sa profondeur
+                émotionnelle et ses personnages marquants, notamment
+                <strong>Asuna Yuuki</strong> et <strong>Yuuki Konno</strong>.
+            </p>
         </section>
+
+        <section aria-labelledby="marque">
+            <h2 id="marque">Notre démarche</h2>
+
+            <p>
+                À travers ce projet, l’objectif est de simuler une boutique spécialisée
+                dans les <strong>produits dérivés inspirés de l’animation japonaise</strong>,
+                tout en respectant les bonnes pratiques de qualité web :
+            </p>
+
+            <ul>
+                <li>Navigation entièrement accessible au clavier</li>
+                <li>Contenus compréhensibles et structurés</li>
+                <li>Formulaire avec validation inclusive</li>
+                <li>Médias accessibles (vidéo sous-titrée, images décrites)</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="photo">
+            <h2 id="photo">Illustration du projet</h2>
+
+            <figure>
+                <img 
+                    src="ressources/asuna_vs_yuuki.jpg"
+                    alt="Illustration d’Asuna et Yuuki s'affrontant dans l’arc Mother's Rosario"
+                >
+                <figcaption>
+                    Illustration d’Asuna et Yuuki dans un duel emblématique de l’arc <strong>Mother’s Rosario</strong>.
+                </figcaption>
+            </figure>
+
+            <p>
+                Cette image illustre un moment impressionnant de l’arc <strong>Mother’s Rosario</strong>,
+                mettant en scène les deux protagonistes principales dans un duel épique.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Liens secondaires">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="produit.html#definitions">Lexique</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

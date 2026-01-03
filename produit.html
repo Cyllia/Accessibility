@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page produit du site</title>
+    <link rel="stylesheet" href="styles/styleproduit.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header> 
         <nav>
             <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#vidéo">Video</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -19,27 +21,54 @@
         <section id="introduction">
             <h1>Sword art online</h1>
             <h2>Mother's Rosario</h2>
-            <h3>Produit en vente</h3>
-        </section>
-        <section id="definitions">
-            <dt>Épée Absolue</dt>
-            <dd>Titre donné à Yuuki Konno, la meilleure épéiste du jeu.</dd>
-            
-            <dt>Skill d’épée</dt>
-            <dd>Technique spéciale utilisant une combinaison d’attaques.</dd>
         </section>
 
-        <img src="ressources/épée_asuna.jpg" alt="Épée de Asuna dans Sword Art Online" />
-        <img src="ressources/épée_yuuki.jpg" alt="Épée de Yuuki dans Sword Art Online" />
+        <section aria-roledescription="carousel" aria-label="Produits dérivés">
+    <div class="carousel">
+        <button class="prev" aria-label="Image précédente">◀</button>
+
+        <div class="carousel-track">
+            <figure class="carousel-item">
+                <img src="ressources/épée_asuna.jpg" alt="Épée d’Asuna">
+                <figcaption>Épée d’Asuna – Réplique officielle</figcaption>
+            </figure>
+
+            <figure class="carousel-item active">
+                <img src="ressources/épée_yuuki.jpg" alt="Épée de Yuuki">
+                <figcaption>Épée de Yuuki – Réplique officielle</figcaption>
+            </figure>
+
+            <figure class="carousel-item">
+                <img src="ressources/figurine.webp" alt="Figurine d’Asuna et Yuuki">
+                <figcaption>Figurine d’Asuna et Yuuki</figcaption>
+            </figure>
+        </div>
+
+        <button class="next" aria-label="Image suivante">▶</button>
+    </div>
+</section>
+
+        <section id="produits">
+            <h2>Produits dérivés</h2>
+            <p>Découvrez nos produits exclusifs inspirés de l’arc Mother's Rosario :</p>
+            <div class="produit-images">
+                <img src="ressources/épée_asuna.jpg" alt="Épée de Asuna dans Sword Art Online" />
+                <img src="ressources/épée_yuuki.jpg" alt="Épée de Yuuki dans Sword Art Online" />
+                <img src="ressources/figurine.webp" alt="Figurine de Asuna et Yuuki" />
+            </div>
+        </section>
+        
     </main>
     <footer>
-        <section id="contact">
-            <h2>Contactez-nous</h2>
-            <p>Pour toute question, n'hésitez pas à nous contacter à l'adresse suivante : </p>
-            <address>
-                <a href="mailto: exemple@email.com"> exemple@email.com</a>
-            </address>
-        </section>
+        <nav aria-label="Liens secondaires">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="produit.html#definitions">Lexique</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

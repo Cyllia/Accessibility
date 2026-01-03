@@ -46,7 +46,7 @@ main {
 }
 
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 h1, h2 {
@@ -63,13 +63,28 @@ img {
 }
 
 /* Présentation */
-présentation {
+.présentation {
     width: 100%;
     max-width: 560px;
     display: block;
     margin: 1rem auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Liste de définitions */
+dl {
+    margin-top: 1.5rem;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Footer */

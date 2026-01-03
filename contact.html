@@ -11,21 +11,22 @@
     <header> 
         <nav>
             <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#vidéo">Video</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="propos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section aria-labelledby="titre-contact">
-            <h1 id="titre-contact">Contact – Projet Mother’s Rosario</h1>
+        <section aria-labelledby="contact">
+            <h1 id="contact">Contact – Projet Mother’s Rosario</h1>
 
             <p id="intro-contact">
                 Ce formulaire vous permet de nous contacter à propos des produits dédiée à l’arc
                 <strong>Mother’s Rosario</strong> de <strong>Sword Art Online</strong> ou des questions liées
                 à l’accessibilité du site.
                 Les champs marqués d’un * sont obligatoires.
+                Lettres uniquement, accents autorisés
             </p>
 
             <div id="form-feedback" role="status" aria-live="polite"></div>
@@ -105,7 +106,7 @@
 
                 <fieldset>
                     <legend>Message *</legend>
-                    <label for="message"></label>
+                    <label for="message">Message...</label>
                     <textarea
                         id="message"
                         name="message"
@@ -121,15 +122,23 @@
 
             </form>
         </section>
+
+        <div id="modal" role="dialog" aria-modal="true" hidden>
+            <p>Votre message a bien été envoyé.</p>
+            <button id="close-modal">Fermer</button>
+        </div>
+
     </main>
     <footer>
-        <section id="contact">
-            <h2>Contactez-nous</h2>
-            <p>Pour toute question, n'hésitez pas à nous contacter à l'adresse suivante : </p>
-            <address>
-                <a href="mailto: exemple@email.com"> exemple@email.com</a>
-            </address>
-        </section>
+        <nav aria-label="Liens secondaires">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="produit.html#definitions">Lexique</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
