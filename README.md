@@ -63,6 +63,8 @@ Le **footer** est identique sur toutes les pages et contient des liens vers tout
 ---
 
 ## Structure du projet
+
+```txt
 /projet
 │
 ├─ index.html
@@ -82,3 +84,4 @@ Le **footer** est identique sur toutes les pages et contient des liens vers tout
 │ ├─ épée_yuuki.jpg/
 │ ├─ Sword Art Online - Asuna vs Yuuki [English Dub].mp4/
 │ └─ sao_asuna_yuuki_fr.vtt
+```
