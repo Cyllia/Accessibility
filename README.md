@@ -5,8 +5,8 @@ Ce projet consiste à créer un mini-site web complet et accessible présentant 
 Le site est conçu pour être **performant, accessible et conforme aux normes WCAG**, en utilisant uniquement **HTML, CSS et JavaScript Vanilla**.
 
 Le site comporte quatre pages principales :
-1. **Accueil** : Bannière (Hero banner) et bouton vers la page produit.
-2. **Produit** : Carrousel accessible, vidéo sous-titrée, lexique de définitions, images de produits.
+1. **Accueil** : Une image qui illustre, bouton vers la page produit, vidéo sous-titrée et lexique de définitions. 
+2. **Produit** : Carrousel accessible, images de produits.
 3. **Contact** : Formulaire accessible avec validation, modale de confirmation.
 4. **À propos** : Présentation de la boutique / marque avec image.
 
@@ -25,10 +25,9 @@ Le **footer** est identique sur toutes les pages et contient des liens vers tout
 - Formulaire avec labels, fieldset et aide à la saisie
 
 ### Carrousel produit
-- Image centrale agrandie
-- Images latérales plus petites
+- Image centrale agrandie et mis en avant
+- Images latérales plus petites et translucide
 - Boutons précédent / suivant
-- Navigation clavier
 
 ### Formulaire de contact
 - Champs obligatoires : Nom, Prénom, Date de naissance, Email, Téléphone, Plage horaire, Message
@@ -44,13 +43,6 @@ Le **footer** est identique sur toutes les pages et contient des liens vers tout
 - **JavaScript Vanilla**
 - Images et vidéo locales pour les médias
 - Sous-titres vidéo au format `.vtt`
-
----
-
-## Accessibilité et qualité web
-- **Lighthouse** : Score > 90 en Accessibilité et Bonnes pratiques
-- **WAVE** : Aucun problème critique détecté
-- Respect des normes WCAG 2.1
 
 ---
 
