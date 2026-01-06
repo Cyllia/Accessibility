@@ -43,6 +43,8 @@
                         aria-required="true"
                         aria-describedby="help-prenom"
                     >
+                    <span class="error-message" id="error-prenom" aria-live="polite"></span>
+
                     <label for="nom">Nom *</label>
                     <input
                         type="text"
@@ -52,6 +54,8 @@
                         aria-required="true"
                         aria-describedby="help-nom"
                     >
+                    <span class="error-message" id="error-nom" aria-live="polite"></span>
+
                     <label for="naissance">Date de naissance *</label>
                     <input
                         type="date"
@@ -61,6 +65,7 @@
                         aria-required="true"
                         aria-describedby="help-naissance"
                     >
+                    <span class="error-message" id="error-naissance" aria-live="polite"></span>
                 </fieldset>
 
                 <fieldset>
@@ -75,6 +80,8 @@
                         aria-describedby="help-email"
                         placeholder="adresse@email.com"
                     >
+                    <span class="error-message" id="error-email" aria-live="polite"></span>
+
                     <label for="telephone">Téléphone *</label>
                     <input
                         type="tel"
@@ -85,24 +92,29 @@
                         aria-describedby="help-telephone"
                         placeholder="06 XX XX XX XX"
                     >
+                    <span class="error-message" id="error-telephone" aria-live="polite"></span>
                 </fieldset>
 
                 <fieldset>
                     <legend>Plage horaire de contact *</legend>
                     <p id="help-plage">Sélectionnez le créneau durant lequel vous êtes joignable.</p>
-                    <div>
+    
+                    <div class="radio-group">
                         <input type="radio" id="matin" name="plage" value="matin" required>
                         <label for="matin">Matin (08h – 12h)</label>
                     </div>
-                    <div>
+                    <div class="radio-group">
                         <input type="radio" id="apresmidi" name="plage" value="apres-midi">
                         <label for="apresmidi">Après-midi (12h – 17h)</label>
                     </div>
-                    <div>
+                    <div class="radio-group">
                         <input type="radio" id="soir" name="plage" value="soir">
                         <label for="soir">Soir (17h – 20h)</label>
                     </div>
+
+                    <span class="error-message" id="error-plage" aria-live="polite"></span>
                 </fieldset>
+
 
                 <fieldset>
                     <legend>Message *</legend>
@@ -116,6 +128,7 @@
                         aria-describedby="help-message"
                         placeholder="Expliquez votre demande."
                     ></textarea>
+                    <span class="error-message" id="error-message" aria-live="polite"></span>
                 </fieldset>
 
                 <button type="submit">Envoyer le message</button>
